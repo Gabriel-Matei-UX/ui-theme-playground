@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>UI Theme Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dynamic UI theme system using HSL color logic, allowing real-time customization of colors, spacing, and border radius via a control panel." />
+    <meta name="keywords" content="UI Theme | HSL color logic | UI Theme Playground" />
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <link rel="icon" href="favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <div class="body-container">
+
+        <header>
+            <h1>UI Theme Playground</h1>
+        </header>
+
+
+        <div class="container">
+
+            <!-- CONTROL PANEL -->
+            <div class="panel">
+
+                <section>
+                    <h3>Controls</h3>
+                    <label>Primary Color</label>
+                    <input type="color" id="colorPicker" />
+                </section>
+
+                <section>
+                    <label>Border Radius</label>
+                    <input type="range" id="radius" min="0" max="30" val="0" />
+                </section>
+
+                <section>
+                    <label>Spacing</label>
+                    <input type="range" id="spacing" min="4" max="70" val="0" />
+                </section>
+
+                <button id="reset" class="btn">Reset</button>
+            </div>
+
+            <!-- PREVIEW -->
+            <div class="preview">
+
+                <div class="card">
+                    <h3>Colors</h3>
+                    <div class="colors">
+                        <div class="color-box c1"></div>
+                        <div class="color-box c2"></div>
+                        <div class="color-box c3"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Colors Variations</h3>
+                    <div class="multi-rows">
+                        <div class="colors">
+                            <div class="color-box p1"></div>
+                            <div class="color-box p5"></div>
+                            <div class="color-box p10"></div>
+                            <div class="color-box p20"></div>
+                            <div class="color-box p30"></div>
+                            <div class="color-box p40"></div>
+                            <div class="color-box p50"></div>
+                            <div class="color-box p60"></div>
+                            <div class="color-box p70"></div>
+                            <div class="color-box p80"></div>
+                            <div class="color-box p90"></div>
+                            <div class="color-box p100"></div>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box pl1"></div>
+                            <div class="color-box pl5"></div>
+                            <div class="color-box pl10"></div>
+                            <div class="color-box pl20"></div>
+                            <div class="color-box pl30"></div>
+                            <div class="color-box pl40"></div>
+                            <div class="color-box pl50"></div>
+                            <div class="color-box pl60"></div>
+                            <div class="color-box pl70"></div>
+                            <div class="color-box pl80"></div>
+                            <div class="color-box pl90"></div>
+                            <div class="color-box pl100"></div>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box pd1"></div>
+                            <div class="color-box pd5"></div>
+                            <div class="color-box pd10"></div>
+                            <div class="color-box pd20"></div>
+                            <div class="color-box pd30"></div>
+                            <div class="color-box pd40"></div>
+                            <div class="color-box pd50"></div>
+                            <div class="color-box pd60"></div>
+                            <div class="color-box pd70"></div>
+                            <div class="color-box pd80"></div>
+                            <div class="color-box pd90"></div>
+                            <div class="color-box pd100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Colors Complementary Variations</h3>
+                    <div class="colors">
+                        <div class="color-box pco1"></div>
+                        <div class="color-box pco5"></div>
+                        <div class="color-box pco10"></div>
+                        <div class="color-box pco20"></div>
+                        <div class="color-box pco30"></div>
+                        <div class="color-box pco40"></div>
+                        <div class="color-box pco50"></div>
+                        <div class="color-box pco60"></div>
+                        <div class="color-box pco70"></div>
+                        <div class="color-box pco80"></div>
+                        <div class="color-box pco90"></div>
+                        <div class="color-box pco100"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Colors Triadic Variations</h3>
+                    <div class="multi-rows">
+                        <div class="colors">
+                            <div class="color-box trio1"></div>
+                            <div class="color-box trio5"></div>
+                            <div class="color-box trio10"></div>
+                            <div class="color-box trio20"></div>
+                            <div class="color-box trio30"></div>
+                            <div class="color-box trio40"></div>
+                            <div class="color-box trio50"></div>
+                            <div class="color-box trio60"></div>
+                            <div class="color-box trio70"></div>
+                            <div class="color-box trio80"></div>
+                            <div class="color-box trio90"></div>
+                            <div class="color-box trio100"></div>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box trit1"></div>
+                            <div class="color-box trit5"></div>
+                            <div class="color-box trit10"></div>
+                            <div class="color-box trit20"></div>
+                            <div class="color-box trit30"></div>
+                            <div class="color-box trit40"></div>
+                            <div class="color-box trit50"></div>
+                            <div class="color-box trit60"></div>
+                            <div class="color-box trit70"></div>
+                            <div class="color-box trit80"></div>
+                            <div class="color-box trit90"></div>
+                            <div class="color-box trit100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Colors Tetradic Variations</h3>
+                    <div class="multi-rows">
+                        <div class="colors">
+                            <div class="color-box tetf1"></div>
+                            <div class="color-box tetf5"></div>
+                            <div class="color-box tetf10"></div>
+                            <div class="color-box tetf20"></div>
+                            <div class="color-box tetf30"></div>
+                            <div class="color-box tetf40"></div>
+                            <div class="color-box tetf50"></div>
+                            <div class="color-box tetf60"></div>
+                            <div class="color-box tetf70"></div>
+                            <div class="color-box tetf80"></div>
+                            <div class="color-box tetf90"></div>
+                            <div class="color-box tetf100"></div>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box tets1"></div>
+                            <div class="color-box tets5"></div>
+                            <div class="color-box tets10"></div>
+                            <div class="color-box tets20"></div>
+                            <div class="color-box tets30"></div>
+                            <div class="color-box tets40"></div>
+                            <div class="color-box tets50"></div>
+                            <div class="color-box tets60"></div>
+                            <div class="color-box tets70"></div>
+                            <div class="color-box tets80"></div>
+                            <div class="color-box tets90"></div>
+                            <div class="color-box tets100"></div>
+                        </div>
+                        <div class="colors">
+                            <div class="color-box tett1"></div>
+                            <div class="color-box tett5"></div>
+                            <div class="color-box tett10"></div>
+                            <div class="color-box tett20"></div>
+                            <div class="color-box tett30"></div>
+                            <div class="color-box tett40"></div>
+                            <div class="color-box tett50"></div>
+                            <div class="color-box tett60"></div>
+                            <div class="color-box tett70"></div>
+                            <div class="color-box tett80"></div>
+                            <div class="color-box tett90"></div>
+                            <div class="color-box tett100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Colors Warm Variations</h3>
+                    <div class="colors">
+                        <div class="color-box pw1"></div>
+                        <div class="color-box pw5"></div>
+                        <div class="color-box pw10"></div>
+                        <div class="color-box pw20"></div>
+                        <div class="color-box pw30"></div>
+                        <div class="color-box pw40"></div>
+                        <div class="color-box pw50"></div>
+                        <div class="color-box pw60"></div>
+                        <div class="color-box pw70"></div>
+                        <div class="color-box pw80"></div>
+                        <div class="color-box pw90"></div>
+                        <div class="color-box pw100"></div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Colors Cold Variations</h3>
+                    <div class="colors">
+                        <div class="color-box pc1"></div>
+                        <div class="color-box pc5"></div>
+                        <div class="color-box pc10"></div>
+                        <div class="color-box pc20"></div>
+                        <div class="color-box pc30"></div>
+                        <div class="color-box pc40"></div>
+                        <div class="color-box pc50"></div>
+                        <div class="color-box pc60"></div>
+                        <div class="color-box pc70"></div>
+                        <div class="color-box pc80"></div>
+                        <div class="color-box pc90"></div>
+                        <div class="color-box pc100"></div>
+                    </div>
+                </div>
+
+                <div class="card bg-primary">
+                    <h1>This is example heading (h1)</h1>
+                    <h2>This is example heading (h2)</h2>
+                    <h3>This is example heading (h3)</h3>
+                    <h4>This is example heading (h4)</h4>
+                    <h5>This is example heading (h5)</h5>
+                    <h6>This is example heading (h6)</h6>
+                </div>
+
+                <div class="card">
+                    <h3>Buttons</h3>
+                    <div class="buttons">
+                        <button class="btn">Primary</button>
+                        <button class="btn secondary">Secondary</button>
+                        <button class="btn transparent">Primary</button>
+                        <button class="btn secondary transparent">Secondary</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-section">
+                        <h3>Form</h3>
+                        <div class="one-line">
+                            <label for="a">
+                                A Radio
+                                <input id="a" type="radio" name="radio" value="a" checked>
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label for="b">
+                                B Radio
+                                <input id="b" type="radio" name="radio" value="b">
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label for="c">
+                                C Radio
+                                <input id="c" type="radio" name="radio" value="c">
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label for="d">
+                                D Radio
+                                <input id="d" type="radio" name="radio" value="d">
+                                <div class="control-indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="one-line">
+                            <label for="ac">A Checkbox
+                                <input id="ac" type="checkbox" checked="checked" />
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label for="bc">B Checkbox
+                                <input id="bc" type="checkbox" />
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label for="cc">C Checkbox
+                                <input id="cc" type="checkbox" />
+                                <div class="control-indicator"></div>
+                            </label>
+                            <label for="dc">D Checkbox
+                                <input id="dc" type="checkbox" />
+                                <div class="control-indicator"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card-section">
+                        <input placeholder="Text input" />
+                    </div>
+                    <div class="card-section">
+                        <select>
+                            <option>Select option</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                    </div>
+                    <div class="card-section">
+                        <textarea placeholder="Textarea" rows="5"></textarea>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="custom.js"></script>
+</body>
+
+</html>
