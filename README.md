@@ -99,4 +99,4 @@ LinkedIn: https://www.linkedin.com/in/gabriel-matei-0433b318/
 This project is part of a growing portfolio focused on:
 - UI systems
 - AI-assisted development
-- scalable frontend architecture
+- scalable frontend architecture 
