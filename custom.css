@@ -927,7 +927,7 @@ label:has(input[type="radio"]) input:disabled ~ .control-indicator:after {
 
   .colors {
     flex-direction: column;
-    max-width: 33.333%;
+    max-width: calc(33.333% - var(--spacing) / 4);
   }
 
   .color-box {
